@@ -1,0 +1,19 @@
+{
+  "name": "electronapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-packager . Export2Mobile  && cp icon.icns Export2Mobile-darwin-x64/Export2Mobile.app/Contents/Resources/electron.icns",
+    "package": "asar pack Export2Mobile-darwin-x64/Export2Mobile.app/Contents/Resources/app Export2Mobile-darwin-x64/Export2Mobile.app/Contents/Resources/app.asar"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "asar": "^3.0.3",
+    "electron": "^9.1.1",
+    "electron-packager": "^15.0.0"
+  }
+}
